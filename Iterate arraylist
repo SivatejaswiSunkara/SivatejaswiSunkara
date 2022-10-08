@@ -1,0 +1,30 @@
+package iterateTest; 
+import java.util.ArrayList; 
+public class IterateArrayList 
+{ 
+public static void main(String[] args) 
+{
+ArrayList<String> al = new ArrayList<String>();
+al.add("A");
+al.add("B");
+al.add("C");
+al.add("D");
+al.add("E");
+System.out.println(al);
+System.out.println("Using for loop"); 
+int elementsize = al.size(); 
+System.out.println("Size: " +elementsize); 
+for(int i = 0; i < al.size(); i++) 
+{
+String getElement = al.get(i); 
+System.out.println(getElement); 
+} 
+al.set(2, "G");
+al.set(3, null);
+System.out.println("Using Enhance for loop"); 
+for(String element:al)
+{ 
+System.out.println(element); 
+} 
+} 
+}
